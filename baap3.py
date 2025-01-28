@@ -88,7 +88,7 @@ import asyncio
 async def run_attack_command_async(target_ip, target_port, duration):
     # Run both commands concurrently
     attack_process = asyncio.create_subprocess_shell(
-        f"./soul {target_ip} {target_port} {duration}"
+        f"./k {target_ip} {target_port} {duration}"
     )
     pkill_process = asyncio.create_subprocess_shell("pkill screen")
 

